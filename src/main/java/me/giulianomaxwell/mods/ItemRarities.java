@@ -6,6 +6,6 @@ public class ItemRarities implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
+        
     }
 }
