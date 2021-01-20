@@ -1,4 +1,5 @@
 # Item-Rarities
+Minecraft Versions: 1.16.5
 An API for the Fabric mod loader (Minecraft) that gives items a rarity tier.
 
 This API is meant to be used in other Fabric mods to add functionality and make them work together. On it's own it doesn't do much.
