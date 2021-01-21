@@ -1,8 +1,9 @@
-package me.giulianomaxwell.mods.api.registry;
+package me.giulianomaxwell.mods.implementation.registry;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import me.giulianomaxwell.mods.api.Rarity;
+import me.giulianomaxwell.mods.api.registry.RegistryInterface;
 import net.minecraft.util.Identifier;
 
 import java.util.Set;
