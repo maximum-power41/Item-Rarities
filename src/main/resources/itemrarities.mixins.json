@@ -4,6 +4,7 @@
   "package": "me.giulianomaxwell.mods.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ItemRarityMixin"
   ],
   "client": [
   ],
