@@ -32,8 +32,8 @@ public abstract class ItemStackMixin implements ItemRarityInterface, ModifyToolt
     }
 
     @Override
-    @Inject(method = "getTooltip", at = @At("RETURN"))
+    @Inject(method = "getTooltip", at = @At(value = "RETURN"))
     public void modifyTooltip(PlayerEntity player, TooltipContext context, CallbackInfoReturnable<List<Text>> cir) {
-        cir.getReturnValue().add(new LiteralText(itemRarity.getDisplayName()));
+        cir.getReturnValue().add(1, new LiteralText(itemRarity.getDisplayName()));
     }
 }
