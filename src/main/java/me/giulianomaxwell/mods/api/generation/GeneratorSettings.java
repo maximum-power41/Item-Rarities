@@ -1,6 +1,6 @@
 package me.giulianomaxwell.mods.api.generation;
 
-public final class GeneratorSettings {
+public class GeneratorSettings {
 
     private final boolean canGenerate;
     private final RarityGenerator.GenerationChance generationChance;
@@ -18,7 +18,7 @@ public final class GeneratorSettings {
         return generationChance;
     }
 
-    public static final class Builder {
+    public static class Builder {
 
         private boolean canGenerate;
         private RarityGenerator.GenerationChance generationChance;
