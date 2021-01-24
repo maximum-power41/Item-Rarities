@@ -10,7 +10,7 @@ import java.util.Set;
 
 public final class RarityRegistry implements RegistryInterface<Rarity> {
 
-    private final BiMap<Identifier, Rarity> RARITY_MAP;
+    private static BiMap<Identifier, Rarity> RARITY_MAP;
     private static final RarityRegistry RARITY_REGISTRY_INSTANCE = new RarityRegistry();
 
     private RarityRegistry() {
