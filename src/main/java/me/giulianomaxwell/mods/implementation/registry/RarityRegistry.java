@@ -10,11 +10,11 @@ import java.util.Set;
 
 public final class RarityRegistry implements RegistryInterface<Rarity> {
 
-    private final BiMap<Identifier, Rarity> rarityMap;
+    private final BiMap<Identifier, Rarity> RARITY_MAP;
     private static final RarityRegistry RARITY_REGISTRY_INSTANCE = new RarityRegistry();
 
     private RarityRegistry() {
-        rarityMap = HashBiMap.create();
+        RARITY_MAP = HashBiMap.create();
     }
 
     public static RarityRegistry getInstance() {
@@ -23,26 +23,26 @@ public final class RarityRegistry implements RegistryInterface<Rarity> {
 
     @Override
     public void register(Identifier identifier, Rarity value) {
-        rarityMap.put(identifier, value);
+        RARITY_MAP.put(identifier, value);
     }
 
     @Override
     public Rarity getValue(Identifier identifier) {
-        return rarityMap.get(identifier);
+        return RARITY_MAP.get(identifier);
     }
 
     @Override
     public Identifier getIdentifier(Rarity value) {
-        return rarityMap.inverse().get(value);
+        return RARITY_MAP.inverse().get(value);
     }
 
     @Override
     public Set<Identifier> getIdentifiers() {
-        return rarityMap.keySet();
+        return RARITY_MAP.keySet();
     }
 
     @Override
     public Set<Rarity> getValues() {
-        return rarityMap.values();
+        return RARITY_MAP.values();
     }
 }
