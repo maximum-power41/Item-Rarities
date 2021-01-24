@@ -13,7 +13,7 @@ public class GeneratorRegistry implements RegistryInterface<GenerateRarityInterf
     private static final GeneratorRegistry GENERATOR_REGISTRY_INSTANCE = new GeneratorRegistry();
     private static BiMap<Identifier, GenerateRarityInterface> GENERATOR_MAP;
 
-    public GeneratorRegistry getInstance() {
+    public static GeneratorRegistry getInstance() {
         return GENERATOR_REGISTRY_INSTANCE;
     }
 
