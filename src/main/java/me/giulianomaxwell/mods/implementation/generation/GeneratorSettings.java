@@ -1,4 +1,4 @@
-package me.giulianomaxwell.mods.api.generation;
+package me.giulianomaxwell.mods.implementation.generation;
 
 public class GeneratorSettings {
 
