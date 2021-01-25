@@ -10,7 +10,7 @@ public class GeneratorSettings {
         this.generationChance = generationChance;
     }
 
-    public boolean isCanGenerate() {
+    public boolean canGenerate() {
         return canGenerate;
     }
 
@@ -27,12 +27,14 @@ public class GeneratorSettings {
             return new GeneratorSettings(canGenerate, generationChance);
         }
 
-        public void setCanGenerate(boolean canGenerate) {
+        public Builder setCanGenerate(boolean canGenerate) {
             this.canGenerate = canGenerate;
+            return this;
         }
 
-        public void setGenerationChance(RarityGenerator.GenerationChance generationChance) {
+        public Builder setGenerationChance(RarityGenerator.GenerationChance generationChance) {
             this.generationChance = generationChance;
+            return this;
         }
     }
 }

@@ -1,6 +1,8 @@
 package me.giulianomaxwell.mods.api;
 
-public abstract class Rarity {
+import me.giulianomaxwell.mods.api.generation.GenerateRarityInterface;
+
+public abstract class Rarity implements GenerateRarityInterface {
 
     private final String displayName;
 
