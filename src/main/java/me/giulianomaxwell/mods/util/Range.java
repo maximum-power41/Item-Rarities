@@ -23,6 +23,9 @@ public abstract class Range<T extends Number> {
         this.minimumType = type;
     }
 
+    @Override
+    public abstract boolean equals(Object obj);
+
     public T getMaximum() {
         return maximum;
     }
@@ -41,8 +44,6 @@ public abstract class Range<T extends Number> {
     }
 
     public abstract boolean isInRange(T value);
-
-    public abstract boolean matches(Range<T> range);
 
     public abstract boolean isIntersecting(Range<T> range);
 

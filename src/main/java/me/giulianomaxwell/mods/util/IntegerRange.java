@@ -26,11 +26,6 @@ public class IntegerRange extends Range<Integer> {
     }
 
     @Override
-    public boolean matches(Range<Integer> range) {
-        return range.getMinimum().equals(getMinimum()) && range.getMaximum().equals(getMaximum()) && range.getMinimumType().equals(getMinimumType()) && range.getMaximumType().equals(getMaximumType());
-    }
-
-    @Override
     public boolean isIntersecting(Range<Integer> range) {
         int minRange = range.getMinimum();
         int maxRange = range.getMaximum();
@@ -39,5 +34,12 @@ public class IntegerRange extends Range<Integer> {
         boolean isMaxIntersecting = isInRange(maxRange);
 
         return isMaxIntersecting || isMinIntersecting;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof IntegerRange)) return false;
+        IntegerRange integerRange = (IntegerRange) obj;
+        return integerRange.getMinimum().equals(getMinimum()) && integerRange.getMaximum().equals(getMaximum()) && integerRange.getMinimumType().equals(getMinimumType()) && integerRange.getMaximumType().equals(getMaximumType());
     }
 }

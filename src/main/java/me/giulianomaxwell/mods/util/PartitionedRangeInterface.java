@@ -2,11 +2,11 @@ package me.giulianomaxwell.mods.util;
 
 import java.util.Set;
 
-public interface PartitionedRangeInterface <T extends Number>{
+public interface PartitionedRangeInterface <T extends Number, E extends Range<T> & InnerRangeInterface<T>>{
 
-    boolean addInnerRange(InnerRangeInterface<T> innerRangeInterface);
+    boolean addInnerRange(E innerRange);
 
-    boolean isIntersectingInnerRange(InnerRangeInterface<T> innerRangeInterface);
+    <R extends Range<T>> boolean isIntersectingInnerRange(R range);
 
-    Set<InnerRangeInterface<T>> getInnerRanges();
+    Set<E> getInnerRanges();
 }
