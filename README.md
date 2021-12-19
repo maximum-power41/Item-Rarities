@@ -6,11 +6,10 @@ This API is meant to be used in other Fabric mods to add functionality and make 
 The following goals for the project are as follows:
   - Make all items have a rarity tier. 
   - Custom tooltips on items to show their rarity tier.
-  - Make ways for rarity tiers to generate when obtaining an item (crafting, loot, etc).
   - Ability to configure what items have rarity tiers, how they are obtained, rarity tier generation chances, etc.
-  - (possibly?) Make items show the color of their rarity tier around the item when in an item slot.
+  - (Under Review) Make items show the color of their rarity tier around the item when in an item slot.
   - Ability to add new rarity tiers.
-  - (possibly?) Add hooks to allow mods to do things when certain actions are performed like when generating a rarity tier.
+  - Add hooks to allow mods to do things when certain actions are performed like when generating a rarity tier.
 
 This mod is currently a work in progress and is not ready for use. I'm a computer science student and this is my first minecrtaft mod so there might be problems/bugs. I'm working on this project to learn and for experience, but also to add mods to minecraft which I would want and haven't seen yet. 
 
